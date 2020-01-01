@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertrongen/qr2bcdisplay.git"
+    "url": "git+https://github.com/robertrongen/bcf-qr-lcd-display.git"
   },
   "keywords": [
     "QR",
@@ -18,7 +18,7 @@
   "author": "Robert Rongen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robertrongen/qr2bcdisplay/issues"
+    "url": "https://github.com/robertrongen/bcf-qr-lcd-display/issues"
   },
-  "homepage": "https://github.com/robertrongen/qr2bcdisplay#readme"
+  "homepage": "https://github.com/robertrongen/bcf-qr-lcd-display#readme"
 }
