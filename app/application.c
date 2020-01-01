@@ -3,16 +3,6 @@
 
 #define BATTERY_UPDATE_INTERVAL (60 * 60 * 1000)
 
-// Function prototypes
-static void doBasicDemo(void);
-static void printQr(const uint8_t qrcode[]);
-
-// The main application program.
-int main(void) {
-	doBasicDemo();
-	return EXIT_SUCCESS;
-}
-
 // LED instance
 bc_led_t led;
 
@@ -23,8 +13,6 @@ bc_gfx_t *gfx;
 bc_button_t button_left;
 bc_button_t button_right;
 
-
-/*---- Begin Blokko suite ----*/
 
 // QR code variables
 char qr_code[250];
@@ -277,7 +265,7 @@ static void doBasicDemo(void) {
 	bool ok = qrcodegen_encodeText(text, tempBuffer, qrcode, qrcodegen_Ecc_MEDIUM,
 		qrcodegen_VERSION_MIN, qrcodegen_VERSION_MAX, qrcodegen_Mask_AUTO, true);
 	if (ok)
-		print_qr(qrcode);
+		printQr(qrcode);
 }
 
 /*---- End Demo suite ----*/
@@ -299,19 +287,4 @@ void application_task(void)
         bc_log_debug("calling page 3");
         lcd_page_with_data();
     }
-}
-
-/*---- Utilities ----*/
-
-// Prints the given QR Code to the console.
-static void print_qr(const uint8_t qrcode[]) {
-	int size = qrcodegen_getSize(qrcode);
-	int border = 4;
-	for (int y = -border; y < size + border; y++) {
-		for (int x = -border; x < size + border; x++) {
-			fputs((qrcodegen_getModule(qrcode, x, y) ? "##" : "  "), stdout);
-		}
-		fputs("\n", stdout);
-	}
-	fputs("\n", stdout);
 }
