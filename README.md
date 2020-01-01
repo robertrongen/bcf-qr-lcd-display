@@ -1,5 +1,11 @@
 <a href="https://www.bigclown.com/"><img src="https://bigclown.sirv.com/logo.png" width="200" alt="BigClown Logo" align="right"></a>
 
+# Display QR code on BigClown LCD Display Module
+
+This project aims to display a QR code on an LCD module using BigClown platform.
+The URL is a standard URL with an added variable orderid (?orderid=x) received from an MQTT broker via BigClown Playground.
+More info on the wiki pages of this repository.
+
 # Firmware Skeleton for BigClown Core Module
 
 [![Travis](https://img.shields.io/travis/bigclownlabs/bcf-skeleton/master.svg)](https://travis-ci.org/bigclownlabs/bcf-skeleton)
