@@ -1,0 +1,24 @@
+{
+  "name": "qr2bcdisplay",
+  "version": "1.0.0",
+  "description": "Display QR code on BigClown LCD Display Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertrongen/qr2bcdisplay.git"
+  },
+  "keywords": [
+    "QR",
+    "Code",
+    "BigClown"
+  ],
+  "author": "Robert Rongen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertrongen/qr2bcdisplay/issues"
+  },
+  "homepage": "https://github.com/robertrongen/qr2bcdisplay#readme"
+}
